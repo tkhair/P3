@@ -13,5 +13,22 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::index('make');
 });
+
+//Route::controller(Controller::detect());
+
+Route::get('/users', function()
+{
+	return View::make('users');
+});
+
+Route::get('/lorem', array(
+    'as' => 'LoremController.new',
+    'uses' => 'LoremController@add'
+) );
+ 
+Route::post('/lorem', array(
+    'as' => 'LoremController.create',
+    'uses' => 'LoremController@create'
+) );

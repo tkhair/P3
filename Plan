@@ -1,0 +1,32 @@
+Plan
+
+********************
+Homepage / Landing page
+- title
+- description
+- link to Lorem Ipsum Generator
+- link to Random User Generator
+
+GET
+/
+
+********************
+Page with Lorem Ipsum Generator
+- title
+- intro
+- form
+
+Show form to generate
+Generate
+
+
+*********************
+Page with Random User Generator
+- title
+- intro
+- form
+
+Show form to generate
+Generate
+********************
+
