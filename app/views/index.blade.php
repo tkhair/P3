@@ -1,12 +1,12 @@
-@extends('_master')
+@extends('layout')
 
 @section('title')
-CSCI E-15 P3 by Tatiana Khair - Welcome
+Assignment 3 - Homepage
 @stop
 
 @section('content')
-      <div class="container">
-<a href="http://cscie15p3.khair.co/lorem"></a>Lorem Ipsum Generator</a><br/>
-<a href="http://cscie15p3.khair.co/users"></a>Fake User Generator</a>
+      <div>
+<a href="http://cscie15p3.khair.co/lorem">Lorem Ipsum Generator</a><br/>
+<a href="http://cscie15p3.khair.co/users">Fake User Generator</a>
     </div> 
 @stop

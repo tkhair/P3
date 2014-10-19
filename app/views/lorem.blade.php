@@ -1,7 +1,8 @@
-@extends('_master')
+@extends('layout')
+
 
 @section('title')
-CSCI E-15 P3 by Tatiana Khair - Dummy Text Generator
+Dummy Text Generator
 @stop
 
 @section('content')
@@ -19,14 +20,7 @@ CSCI E-15 P3 by Tatiana Khair - Dummy Text Generator
 
       <div class="form-group col-lg-12">
         {{ Form::label( 'parNumber', 'How many paragraphs of dummy text do you need to generate?' ) }}
-        {{ Form::select('parNumber', 
-        [
-           '1' => '1 paragraph',
-           '2' => '2 paragraphs',
-           '3' => '3 paragraphs',
-           '4' => '4 paragraphs',
-           '5' => '5 paragraphs',
-        ], null, 
+        {{ Form::selectRange('parNumber',1 , 50, 
           array(
             'class' => 'form-control',
             'id' => 'parNumber',

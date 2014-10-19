@@ -1,7 +1,7 @@
-@extends('_master')
+@extends('layout')
 
 @section('title')
-CSCI E-15 P3 by Tatiana Khair - Fake Users Generator
+Fake Users Generator
 @stop
 
 @section('content')

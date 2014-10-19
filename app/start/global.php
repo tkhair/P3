@@ -48,8 +48,20 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 
 App::error(function(Exception $exception, $code)
 {
-	Log::error($exception);
+    if ($exception instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException)
+    {
+        Log::error('NotFoundHttpException Route: ' . Request::url() );
+    }
+
+    Log::error($exception);
 });
+
+/*
+App::missing(function($e) {
+    $url = Request::fullUrl();
+    Log::warning("404 for URL: $url");
+    return Response::view('errors.not-found', array(), 404);
+});*/
 
 /*
 |--------------------------------------------------------------------------

@@ -11,9 +11,11 @@
 |
 */
 
+
 Route::get('/', function()
 {
-	return View::index('make');
+	return View::make('index');
+	//return 'Hello world!';
 });
 
 //Route::controller(Controller::detect());

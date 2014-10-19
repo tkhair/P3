@@ -3,7 +3,7 @@
 class LoremController extends BaseController {
 
 public function add() {
-    return View::make( 'lorem_ipsum' );
+    return View::make( 'lorem' );
 }
      
 public function create() {

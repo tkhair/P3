@@ -19,6 +19,8 @@ I also added this link to my P1 portfolio
 ## Outside code
 * Bootstrap
 * Laravel
+*Errors handling (routing) http://stackoverflow.com/questions/20219229/laravel-4-how-to-find-route-for-notfoundhttpexception
+* 404 errors information http://stackoverflow.com/questions/15843265/laravel-4-exception-notfoundhttpexception
 
 
 ==

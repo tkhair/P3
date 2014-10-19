@@ -16,8 +16,8 @@ Page with Lorem Ipsum Generator
 - intro
 - form
 
-Show form to generate
-Generate
+Show form to generate GET lorem
+Generate POST
 
 
 *********************
@@ -26,7 +26,7 @@ Page with Random User Generator
 - intro
 - form
 
-Show form to generate
-Generate
+Show form to generate GET users
+Generate POST
 ********************
 
