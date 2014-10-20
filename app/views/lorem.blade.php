@@ -6,38 +6,45 @@ Dummy Text Generator
 @stop
 
 @section('content')
-<div class="container">
+<h2>Dummy Text Generator</h2><br/>
+    <a href="/">Back</a>
+    <br/><br/>
+
+ 
+     <div>
       {{ Form::open( array(
           'route' => 'LoremController.create',
           'method' => 'post',
           'id' => 'form-add-lorem',
           'role' => 'form',
           ) ) }}
-      
-      <div class="col-lg-10 col-lg-offset-1">
-          <h3 class="text-justify" id="lorem"></h3>          
-      </div>
 
-      <div class="form-group col-lg-12">
-        {{ Form::label( 'parNumber', 'How many paragraphs of dummy text do you need to generate?' ) }}
-        {{ Form::selectRange('parNumber',1 , 50, 
-          array(
-            'class' => 'form-control',
-            'id' => 'parNumber',
-            'required' => true,
-            'placeholder' => 'Enter Number of paragraphs',
-            'maxlength' => 10,
-          )
-        ) }}
-
-        {{ Form::submit( 'Submit', array(
-            'id' => 'submitBtn_lorem',
-            'class' => 'col-lg-4 col-lg-offset-4',
-        ) ) }}
-      </div>
+      <div class="form">
+          <div class="input-group">
+          <span class="input-group-addon">
+              {{ Form::label( 'parNumber', 'How many paragraphs of dummy text do you need to generate?' ) }}
+              <br/>
+              {{ Form::selectRange('parNumber', 1, 20, 3,
+                array(
+                  'class' => 'form-control',
+                  'id' => 'parNumber',
+                  'required' => true,
+                  'placeholder' => 'Enter Number of paragraphs',
+                )
+              ) }}
+          </div>
+          </span>
+          <br/>
+          {{ Form::submit( 'Generate!', array(
+              'id' => 'submitBtn_lorem',
+              'class' => 'btn btn-primary',
+          ) ) }}
+        </div>
                      
       {{ Form::close() }}
 
     </div>
-    
+<div>
+            <p class="text-justify"  id="lorem"></p>
+          </div>
 @stop

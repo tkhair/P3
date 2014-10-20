@@ -20,10 +20,15 @@ Route::get('/', function()
 
 //Route::controller(Controller::detect());
 
-Route::get('/users', function()
-{
-	return View::make('users');
-});
+Route::get('/users', array(
+    'as' => 'UsersController.new',
+    'uses' => 'UsersController@add'
+) );
+ 
+Route::post('/users', array(
+    'as' => 'UsersController.create',
+    'uses' => 'UsersController@create'
+) );
 
 Route::get('/lorem', array(
     'as' => 'LoremController.new',
