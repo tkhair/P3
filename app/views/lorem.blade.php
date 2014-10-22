@@ -16,7 +16,6 @@ Dummy Text Generator
           'route' => 'LoremController.create',
           'method' => 'post',
           'id' => 'form-add-lorem',
-          'role' => 'form',
           ) ) }}
 
       <div class="form">
@@ -45,6 +44,6 @@ Dummy Text Generator
 
     </div>
 <div>
-            <p class="text-justify"  id="lorem"></p>
+            <p id="lorem"></p>
           </div>
 @stop

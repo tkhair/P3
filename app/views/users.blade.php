@@ -41,6 +41,6 @@ Fake Users Generator
 
     </div> 
     <div>
-            <p class="text-justify"  id="users"></p>
-          </div>
+        <p id="users"></p>
+    </div>
 @stop

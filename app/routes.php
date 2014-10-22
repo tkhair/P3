@@ -20,21 +20,25 @@ Route::get('/', function()
 
 //Route::controller(Controller::detect());
 
+//create options form
 Route::get('/users', array(
     'as' => 'UsersController.new',
     'uses' => 'UsersController@add'
 ) );
  
+//results 
 Route::post('/users', array(
     'as' => 'UsersController.create',
     'uses' => 'UsersController@create'
 ) );
 
+//create options form
 Route::get('/lorem', array(
     'as' => 'LoremController.new',
     'uses' => 'LoremController@add'
 ) );
- 
+
+//results  
 Route::post('/lorem', array(
     'as' => 'LoremController.create',
     'uses' => 'LoremController@create'
