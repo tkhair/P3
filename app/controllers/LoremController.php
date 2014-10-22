@@ -20,7 +20,11 @@ public function create() {
     $paragraphs = $generator->getParagraphs($parNumber);
     
     $result = implode('</p><p>', $paragraphs);
+    $output = array('type' => 'message', 'msg' => $result);
  
-            return Response::json( $result );
+            return Response::json( $output ); 
+            //return Response::json(array('type' => 'message', 'msg' => $result));
         }
      }
+
+

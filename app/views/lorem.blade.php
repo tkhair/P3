@@ -10,8 +10,7 @@ Dummy Text Generator
     <a href="/">Back</a>
     <br/><br/>
 
- 
-     <div>
+<div>
       {{ Form::open( array(
           'route' => 'LoremController.create',
           'method' => 'post',
@@ -29,10 +28,11 @@ Dummy Text Generator
                   'id' => 'parNumber',
                   'required' => true,
                   'placeholder' => 'Enter Number of paragraphs',
+                  'maxlength' =>10,
                 )
               ) }}
-          </div>
           </span>
+          </div>
           <br/>
           {{ Form::submit( 'Generate!', array(
               'id' => 'submitBtn_lorem',
@@ -43,7 +43,7 @@ Dummy Text Generator
       {{ Form::close() }}
 
     </div>
-<div>
-            <p id="lorem"></p>
+<div id="lorem-result">
+
           </div>
 @stop

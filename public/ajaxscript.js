@@ -11,7 +11,7 @@ jQuery( document ).ready( function( $ ) {
             function( data ) {
                 var result = data.msg;
 
-                $("#lorem").html(result);
+                $("#lorem-result").html(result);
             },
             'json'
         );
@@ -43,7 +43,7 @@ jQuery( document ).ready( function( $ ) {
                 //loop to create users in boxes
                 for(i = 0; i < $( '#usersNum' ).val(); i++){
                   $("#users").append(
-                  "<div class="generate">"+
+                  "<div class='generate'>"+
                     "<h4>"+data.msg[i].name+"</h4>"+
                     "<p>Birthday: "+data.msg[i].bday+"</p>"+
                     "<p>Company: "+data.msg[i].company+"</p>"+

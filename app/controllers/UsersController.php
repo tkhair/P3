@@ -25,7 +25,6 @@ class UsersController extends BaseController {
                 $users[$i]['name'] = $faker->name.'<br />';
                 $users[$i]['bday'] = $faker->dateTimeThisCentury->format('Y-m-d').'<br />';
                 $users[$i]['email'] = $faker->email.'<br />';
-                $users[$i]['description'] = $faker->text.'<br />'.'<br />';
             }
      
             return Response::json(array('type' => 'message', 'msg' => $users));
