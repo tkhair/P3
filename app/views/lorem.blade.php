@@ -14,7 +14,7 @@ Dummy Text Generator
       {{ Form::open( array(
           'route' => 'LoremController.create',
           'method' => 'post',
-          'id' => 'form-add-lorem',
+          'id' => 'add-lorem',
           ) ) }}
 
       <div class="form">
@@ -43,7 +43,7 @@ Dummy Text Generator
       {{ Form::close() }}
 
     </div>
-<div id="lorem-result">
-
+<div>
+<p id="lorem-result"></p>
           </div>
 @stop
