@@ -27,8 +27,6 @@ Dummy Text Generator
                   'class' => 'form-control',
                   'id' => 'parNumber',
                   'required' => true,
-                  'placeholder' => 'Enter Number of paragraphs',
-                  'maxlength' =>10,
                 )
               ) }}
           </span>

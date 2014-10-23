@@ -25,7 +25,6 @@ Fake Users Generator
               array(
               'class' => 'form-control',
               'id' => 'usersNum',
-              'placeholder' => 'Enter number of users',
             )
           ) }}  
         </span>  

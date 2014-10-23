@@ -39,7 +39,7 @@ jQuery( document ).ready( function( $ ) {
                for(i = 0; i < $( '#usersNum' ).val(); i++){
                   $("#users").append(
                   "<div class='generate'>"+
-                    "<h4>"+data.msg[i].name+"</h4>"+
+                    "<b>"+data.msg[i].name+"</b>"+
                     "<p>Birthday: "+data.msg[i].bday+"</p>"+
                     "<p>Email: "+data.msg[i].email+"</p>"+
                   "</div>"
