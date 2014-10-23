@@ -19,8 +19,8 @@ I also added this link to my P1 portfolio
 ## Outside code
 * Bootstrap
 * Laravel
-*Errors handling (routing) http://stackoverflow.com/questions/20219229/laravel-4-how-to-find-route-for-notfoundhttpexception
+* Errors handling (routing) http://stackoverflow.com/questions/20219229/laravel-4-how-to-find-route-for-notfoundhttpexception
 * 404 errors information http://stackoverflow.com/questions/15843265/laravel-4-exception-notfoundhttpexception
-* PAssing data through AJAX in Laravel http://www.kvcodes.com/2014/05/jquery-ajax-using-in-laravel/
+* Passing data through AJAX in Laravel http://www.kvcodes.com/2014/05/jquery-ajax-using-in-laravel/
 
 ==
