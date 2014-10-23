@@ -1,4 +1,4 @@
-<!DOCTYPE HTML SYSTEM>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -19,11 +19,11 @@
     @yield('content')
 
 
-  </body>
-
+  
+  
   <div class="footer">
     <p>(c) Tatiana Khair 2014<br/>
     This page have been developed in-line with Assignment 3 requirements of CSCI E-15 class at Harvard Extension School</p>
 </div>
-
+</body>
 </html>
