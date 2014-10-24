@@ -14,3 +14,17 @@ form { text-align: center; }
 	border-top: thin dotted #D1D0CE;
 	margin-top: 5%;
 }
+
+.input-group
+{
+	margin-bottom: 10px;
+}
+
+.form{
+		margin-bottom: 10px;
+}
+
+.tool {
+	margin-top: 5px;
+	margin-bottom: 10px
+}

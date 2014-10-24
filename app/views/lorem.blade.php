@@ -6,9 +6,10 @@ Dummy Text Generator
 @stop
 
 @section('content')
+<div id="tool">
 <h2>Dummy Text Generator</h2><br/>
-    <a href="/">Back</a>
-    <br/><br/>
+    <a href="/">Go back</a>
+</div>
 
 <div>
       {{ Form::open( array(
@@ -31,8 +32,7 @@ Dummy Text Generator
               ) }}
           </span>
           </div>
-          <br/>
-          {{ Form::submit( 'Generate!', array(
+             {{ Form::submit( 'Generate!', array(
               'id' => 'submitBtn_lorem',
               'class' => 'btn btn-primary',
           ) ) }}

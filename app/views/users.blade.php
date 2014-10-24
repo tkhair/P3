@@ -5,9 +5,10 @@ Fake Users Generator
 @stop
 
 @section('content')
-<h2>Fake Users Generator</h2><br/>
-    <a href="/">Back</a>
-    <br/><br/>
+<div id="tool">
+<h2>Fake Users Generator</h2>
+    <a href="/">Go back</a>
+</div>
     <div class="form">
       {{ Form::open( array(
           'route' => 'UsersController.create',
@@ -29,7 +30,7 @@ Fake Users Generator
           ) }}  
         </span>  
         </div>
-        <br/>
+     
         <div class="form-group">
           {{ Form::submit( 'Generate!', array(
               'id' => 'submitBtn_users',
