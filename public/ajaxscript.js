@@ -34,7 +34,7 @@ jQuery( document ).ready( function( $ ) {
                 "usersNum": $( '#usersNum' ).val()
             },
             function( data ) {
-                $(".users").remove();
+                $(".generate").remove();
                 console.log(data.msg[0].name);
 
 
