@@ -15,6 +15,7 @@ class UsersController extends BaseController {
             }
             $usersNum = Input::get('usersNum');
 
+
             $users = array();
 
             for($i = 0; $i < $usersNum; $i++){
@@ -29,5 +30,6 @@ class UsersController extends BaseController {
      
             return Response::json(array('type' => 'message', 'msg' => $users));
         }
+    
 }
 

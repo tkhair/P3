@@ -36,7 +36,11 @@ jQuery( document ).ready( function( $ ) {
             function( data ) {
                 $(".users").remove();
                 console.log(data.msg[0].name);
+
+
                for(i = 0; i < $( '#usersNum' ).val(); i++){
+
+           
                   $("#users").append(
                   "<div class='generate'>"+
                     "<b>"+data.msg[i].name+"</b>"+

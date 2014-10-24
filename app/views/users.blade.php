@@ -21,7 +21,7 @@ Fake Users Generator
           <span class="input-group-addon">
           {{ Form::label( 'usersNum', 'How many fake users you would like to generate?' ) }}
         </br>
-          {{ Form::selectRange('usersNum', 1, 3,
+          {{ Form::number('usersNum', '5',
               array(
               'class' => 'form-control',
               'id' => 'usersNum',
